@@ -17,12 +17,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🚀%20Estado-Demo%20Listo-informational?style=flat-square" alt="Estado">
-  <img src="https://img.shields.io/badge/🧠%20IA-Conversacional%20%2B%20Reglas-blue?style=flat-square" alt="IA">
-  <img src="https://img.shields.io/badge/🗺️%20Salida-Google%20Maps-orange?style=flat-square" alt="Maps">
-  <img src="https://img.shields.io/badge/📦%20Formato-8%20Secciones%20Fijas-brightgreen?style=flat-square" alt="Formato">
-</p>
 
 ---
 
@@ -113,4 +107,5 @@ Reglas operativas TRAXIÓN (heurísticas)
 Salida estandarizada (8 secciones)
   ↓
 Ruta + Unidad + Riesgo + Confianza + Mapa
+
 
