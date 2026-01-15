@@ -1,0 +1,177 @@
+═══════════════════════════════════════════════════════════════════════════════
+INSTRUCCIONES DE USO - SISTEMA DE PLANEACIÓN DE RUTAS TRAXIÓN
+Versión 1.0 | Para Coordinadores Operativos
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ ¿PARA QUIÉN ES ESTA HERRAMIENTA?                                          │
+└───────────────────────────────────────────────────────────────────────────┘
+
+✓ COORDINADORES OPERATIVOS que diseñan rutas de transporte
+✓ PERSONAL DE PLANEACIÓN que cotiza servicios a clientes
+✓ SUPERVISORES que validan propuestas de rutas
+
+✗ NO es para choferes (ellos solo ejecutan las rutas ya planeadas)
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ ¿QUÉ HACE ESTA HERRAMIENTA?                                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Te ayuda a diseñar rutas de transporte de forma rápida y estandarizada:
+
+1. CAPTURAS datos básicos (cliente, pasajeros, ubicaciones, horarios)
+2. EL SISTEMA calcula automáticamente:
+   • Cuántas unidades necesitas (vans, minibuses o autobuses)
+   • En qué orden recoger pasajeros
+   • Cuánto tiempo tomará la ruta
+   • Cuánto costará el servicio mensual
+   • Si la ruta cumple con estándares Traxión
+
+3. RECIBES una propuesta profesional con todos los detalles
+
+TIEMPO: De 2-3 horas (manual) → 20-30 minutos (con esta herramienta)
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ CÓMO USAR LA HERRAMIENTA (PASO A PASO)                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+PASO 1: ABRIR LA HERRAMIENTA
+  • Abre el archivo "index.html" en tu navegador (Chrome, Edge o Firefox)
+  • Verás una página con título "Diseña Rutas de Transporte en Minutos"
+
+PASO 2: COMPLETAR DATOS DE LA RUTA
+  La página tiene 4 secciones simples:
+
+  📌 SECCIÓN 1: Información del Cliente
+     • Nombre del cliente (ej: "Grupo Industrial ABC")
+     • Tipo de servicio: Corporativo / Industrial / Educativo / Turístico
+  
+  📌 SECCIÓN 2: Detalles del Servicio  
+     • ¿Cuántas personas? (ej: 45)
+     • ¿Qué días? (Lunes a Viernes, Lunes a Sábado, etc.)
+     • ¿A qué hora sale? ¿A qué hora debe llegar?
+  
+  📌 SECCIÓN 3: Ubicaciones
+     • ¿Desde dónde? (puedes poner varias direcciones, una por línea)
+     • ¿Hacia dónde? (destino final)
+     • (Opcional) Distancia y tiempo si ya los conoces
+  
+  📌 SECCIÓN 4: Opciones Adicionales (OPCIONAL)
+     • Tipo de unidad preferida
+     • Presupuesto del cliente
+     • Servicios extras (A/C, Wi-Fi, rampas)
+
+PASO 3: CALCULAR LA RUTA
+  • Presiona el botón azul "✨ Calcular Ruta Ahora"
+  • La página bajará automáticamente para mostrar los resultados
+
+PASO 4: REVISAR LA PROPUESTA
+  Verás varias tarjetas con información:
+  
+  📋 Resumen: Cliente, tipo, pasajeros, ruta, costo estimado
+  📍 Paradas: Orden sugerido y horarios
+  🚐 Recursos: Cuántas unidades, qué tipo, cuántos operadores
+  💰 Costos: Cálculo mensual desglosado
+  ⚠️  Alertas: Si hay problemas (ej: demasiados pasajeros, horario pico)
+  💡 Recomendaciones: Sugerencias para mejorar la ruta
+
+PASO 5: USAR LA PROPUESTA
+  • Imprimir o guardar como PDF (Ctrl+P en Windows)
+  • Revisar con tu supervisor
+  • Validar con Google Maps antes de confirmar al cliente
+  • Ajustar manualmente si es necesario
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ REGLAS AUTOMÁTICAS QUE USA LA HERRAMIENTA                                 │
+└───────────────────────────────────────────────────────────────────────────┘
+
+El sistema aplica estas reglas de Traxión automáticamente:
+
+✓ Capacidad de unidades:
+  • Van: 12-15 pasajeros
+  • Minibús: 20-25 pasajeros  
+  • Autobús: 35-45 pasajeros
+
+✓ Tiempo máximo de ruta: 90 minutos
+  (Si excede, te alerta)
+
+✓ Distancia recomendada: Hasta 50 km
+  (Si es más lejos, te avisa que costará 25% más)
+
+✓ Tiempo de subida/bajada: 2-3 minutos por parada
+
+✓ Tiempo extra de seguridad: +15% 
+  (Si es horario pico 7-9 AM o 6-8 PM: +20% adicional)
+
+✓ Costo por kilómetro:
+  • Corporativo: $18-22 MXN/km
+  • Industrial: $15-19 MXN/km
+  • Educativo: $12-16 MXN/km
+  • Turístico: $20-25 MXN/km
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ CONSEJOS PARA MEJORES RESULTADOS                                          │
+└───────────────────────────────────────────────────────────────────────────┘
+
+💡 Llena TODOS los datos obligatorios (tienen asterisco *)
+💡 Si no conoces distancia/tiempo, déjalo vacío (se calcula automático)
+💡 Pon direcciones completas (calle, colonia, ciudad)
+💡 Revisa las ALERTAS rojas (son problemas críticos)
+💡 Lee las RECOMENDACIONES (pueden ahorrarte dinero)
+💡 SIEMPRE valida con Google Maps antes de confirmar al cliente
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ PREGUNTAS FRECUENTES                                                      │
+└───────────────────────────────────────────────────────────────────────────┘
+
+❓ ¿Qué hago si no sé cuántos pasajeros habrá exactamente?
+   ➜ Pon el número estimado. La herramienta deja 15% de margen automático.
+
+❓ ¿Puedo poner múltiples puntos de recogida?
+   ➜ Sí. En "Origen(es)" escribe cada dirección en una línea separada.
+
+❓ ¿El costo es exacto?
+   ➜ Es una ESTIMACIÓN. Úsala para cotización inicial. Confirma con finanzas.
+
+❓ ¿Qué significa "horario pico"?
+   ➜ 7-9 AM y 6-8 PM. Hay más tráfico, necesitas más tiempo.
+
+❓ ¿La ruta queda en 90 minutos?
+   ➜ Si es más de 90, aparece ALERTA roja. Debes ajustar o pedir aprobación.
+
+❓ ¿Puedo modificar la propuesta?
+   ➜ Sí. Esta es una GUÍA. Tú decides cómo presentarla al cliente final.
+
+❓ ¿Esto reemplaza mi trabajo?
+   ➜ NO. Te AYUDA a trabajar más rápido. Tú sigues validando y decidiendo.
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ LIMITACIONES (IMPORTANTE SABER)                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Esta herramienta NO hace:
+
+✗ No calcula la ruta matemáticamente perfecta (te da una buena propuesta)
+✗ No revisa tráfico en tiempo real (usa promedios)
+✗ No valida si hay unidades disponibles en ese momento
+✗ No considera acuerdos especiales con el cliente
+
+POR ESO debes:
+  1. Revisar la propuesta personalmente
+  2. Validar con Google Maps
+  3. Confirmar disponibilidad de unidades
+  4. Ajustar según necesidades específicas del cliente
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ SOPORTE                                                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Si tienes dudas:
+  1. Pregunta a tu supervisor de planeación
+  2. Revisa el documento DOCUMENTO_EJECUTIVO.txt
+  3. Lee el archivo PROMPT_AGENTE_IA.txt (tiene todas las reglas detalladas)
+
+═══════════════════════════════════════════════════════════════════════════════
+Desarrollado para: Hackatón Bécalos Traxión Tech Challenge 2025
+Versión: 1.0 | Enero 2025
+═══════════════════════════════════════════════════════════════════════════════
