@@ -98,6 +98,7 @@ body {
     display: flex;
     align-items: center;
     gap: var(--espacio-md);
+    text-decoration: none;
 }
 
 .logo-icon {
@@ -124,9 +125,10 @@ body {
 .logo-text {
     font-size: 1.75rem;
     font-weight: var(--peso-negrita);
-    color: var(--blanco);
+    color: var(--neon-amarillo);
     letter-spacing: 3px;
     text-transform: uppercase;
+
 }
 
 .logo-img {
