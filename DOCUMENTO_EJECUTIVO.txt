@@ -1,113 +1,167 @@
 ═══════════════════════════════════════════════════════════════════════════════
-DOCUMENTO EJECUTIVO | AGENTE IA PARA PLANEACIÓN DE RUTAS - TRAXIÓN
-Sistema de Razonamiento Operativo Estandarizado
+DOCUMENTO EJECUTIVO | ROUTIX
+Agente de IA para Planeación de Rutas de Carga y Personal - TRAXIÓN
 ═══════════════════════════════════════════════════════════════════════════════
 
 ┌───────────────────────────────────────────────────────────────────────────┐
-│ 1. PROBLEMA                                                               │
+│ CONTEXTO: TRAXIÓN Y ROUTIX-CARGA                                         │
 └───────────────────────────────────────────────────────────────────────────┘
 
-HOY: Planeación de rutas sin criterios estandarizados
-• Cada coordinador usa criterios distintos (experiencia individual)
-• Supuestos no documentados generan retrabajos constantes
-• Falta validación contra parámetros operativos clave
+TRAXIÓN es la plataforma de movilidad más grande de México, con operaciones en:
 
-IMPACTO MEDIBLE:
-    15-20% de rutas nuevas requieren rediseño en primeras 2 semanas
-    10-25% desviación entre costo estimado vs. real
-    Variabilidad operativa dificulta escalabilidad entre regiones
+  • TRANSPORTE DE PERSONAL: Servicios corporativos, estudiantiles y turísticos
+  
+  • TRANSPORTE DE CARGA: Operaciones nacionales e internacionales
+  
+  • SERVICIOS COMPLEMENTARIOS: Gestión de permisos SCT, cruces fronterizos,
+    logística especializada y seguimiento GPS
+
+ROUTIX es la solución INTEGRAL que adapta su flujo de planeación según la
+necesidad operativa: logística de MERCANCÍAS o traslado de PERSONAL, aplicando
+las reglas de negocio específicas para cada división.
 
 ┌───────────────────────────────────────────────────────────────────────────┐
-│ 2. SOLUCIÓN PROPUESTA                                                     │
+│ 1. EL PROBLEMA (EN UNA FRASE)                                            │
 └───────────────────────────────────────────────────────────────────────────┘
 
-AGENTE CONVERSACIONAL que estandariza razonamiento inicial mediante:
+Coordinadores planean rutas de carga con criterios inconsistentes, generando 
+rutas ineficientes, supuestos no documentados y retrabajos costosos.
 
-▸ 7 PREGUNTAS CLAVE (captura información prioritaria):
-  1. Tipo de cliente/servicio  2. Número de pasajeros  3. Ubicaciones  
-  4. Horarios  5. Distancia/tiempo  6. Restricciones  7. Presupuesto
-
-▸ 7 REGLAS DE NEGOCIO ESTANDARIZADAS (aplicadas automáticamente):
-  • Capacidad: Van 12-15, Minibús 20-25, Autobús 35-45 pasajeros
-  • Tiempo máximo: 90 minutos | Radio eficiente: 50 km
-  • Abordaje: 2-3 min/parada | Buffer: 15% + 20% en horario pico
-  • Costos: $12-25 MXN/km según tipo de servicio
-
-▸ PROCESO DE VALIDACIÓN EN 5 PASOS:
-  1. Calcular unidades necesarias (ocupación óptima 85%)
-  2. Secuenciar paradas (vecino más cercano)
-  3. Validar restricciones críticas (tiempo, distancia, capacidad)
-  4. Estimar costos (desglose: 60% combustible, 25% operador, 15% mant.)
-  5. Asignar nivel de confianza (alta/media/baja según supuestos)
-
-▸ SALIDA: Propuesta estructurada con supuestos transparentes, alertas críticas 
-  y recomendaciones de optimización
+IMPACTO REAL:
+    ✗ 15-20% de rutas nuevas requieren rediseño en primeras 2 semanas
+    ✗ 10-25% desviación entre costo estimado vs. costo real
+    ✗ Cada coordinador usa su propio método = Variabilidad alta
+    ✗ Escalabilidad difícil entre regiones (CDMX, Monterrey, Guadalajara)
 
 ┌───────────────────────────────────────────────────────────────────────────┐
-│ 3. ¿QUÉ GANAMOS CON ESTO?                                                 │
+│ 2. LA SOLUCIÓN (EN UNA FRASE)                                            │
 └───────────────────────────────────────────────────────────────────────────┘
 
-RESULTADOS INMEDIATOS (Semana 1):
+ROUTIX: Agente conversacional inteligente que detecta el tipo de servicio 
+(Carga o Personal) y adapta sus 5 preguntas de planeación, generando propuestas 
+estructuradas y especializadas para cada división operativa.
 
-  Antes de la Herramienta          →    Con la Herramienta
+CÓMO FUNCIONA:
+
+  ENTRADA: Desde el Portal Web o Chat, el usuario selecciona el servicio y 
+  responde las 5 preguntas correspondientes:
+  
+  Opción A: CARGA                   Opción B: PERSONAL
+  1. Tipo y tamaño de carga         1. Cantidad de pasajeros y perfil
+  2. Origen y destinos              2. Puntos de recolección y destino
+  3. Horario límite                 3. Horarios de turno (Entrada/Salida)
+  4. Tipo de unidad                 4. Unidad preferida o sugerida
+  5. Prioridad operativa            5. Prioridad (Confort/Puntualidad)
+
+  PROCESO: Aplica 8 reglas de negocio Traxión automáticamente
+  • Capacidad de unidades (Camión 3.5t, Rabón, Torton, Tráiler)
+  • Tiempos de carga/descarga (15-45 min según complejidad)
+  • Velocidades promedio (urbana 30-40 km/h, autopista 80-90 km/h)
+  • Radios de cobertura (urbana <50km, regional 50-300km, nacional >300km)
+  • Horarios pico y restricciones (Hoy No Circula Carga CDMX)
+  • Costos base ($12-25 MXN/km según distancia y tipo)
+  • Buffer operativo (10-30% según prioridad)
+  • Criterios seguridad (NOM-004-SCT para peligrosa, refrigeración perecedera)
+
+  SALIDA: Propuesta estructurada en 8 secciones (siempre iguales)
+  ┌────────────────────────────────────────────────────────────────┐
+  │ 1. Ruta sugerida (directa/multi-parada/dividida)              │
+  │ 2. Unidad considerada (tipo y ocupación estimada)             │
+  │ 3. Supuestos que tomé (con impacto: Bajo/Medio/Alto)          │
+  │ 4. Reglas que apliqué (criterios operativos usados)           │
+  │ 5. Nivel de riesgo operativo (Bajo/Medio/Alto + mitigación)   │
+  │ 6. Nivel de confianza (Alta/Media/Baja + justificación)       │
+  │ 7. Recomendación inmediata (acción concreta y ejecutable)     │
+  │ 8. Enlace Google Maps (ruta completa lista para validar)      │
+  └────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ 3. ¿QUÉ GANAMOS? (RESULTADOS MEDIBLES)                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+IMPACTO INMEDIATO (Semana 1):
+  
+  HOY sin ROUTIX               →    CON ROUTIX
   ─────────────────────────────────────────────────────────────────────────
-  2-3 horas diseñando cada ruta         20-30 minutos por ruta
-  35% de variabilidad entre equipos     Menos de 5% de variabilidad
-  15-20% de rutas con retrabajos        Solo 2-5% necesitan ajustes
+  2-3 horas diseñando ruta           20-30 minutos por ruta
+  Criterios distintos por persona    Criterios estandarizados 100%
+  15-20% rutas con retrabajos        Solo 2-5% ajustes menores
+  Supuestos no documentados          Todos los supuestos visibles
 
-IMPACTO EN RESULTADOS CLAVE (3-6 meses):
+IMPACTO A 3-6 MESES:
 
-  Métrica                     Mejora Esperada          ¿Por qué?
+  Métrica                      Mejora Esperada         ¿Por qué?
   ─────────────────────────────────────────────────────────────────────────
-  Costo por kilómetro         -8% a -12%               Menos paradas innecesarias
-  Puntualidad                 +5 a +10 puntos          Cálculos realistas de tiempo
-  Tiempo cotización→venta     -40% a -50%              Propuestas más rápidas
+  Tiempo de planeación         -70% a -80%             5 preguntas vs. análisis manual
+  Consistencia de propuestas   +85% a +95%             Formato fijo de 8 secciones
+  Rutas que requieren ajustes  -60% a -75%             Reglas validadas desde inicio
+  Confianza en estimaciones    +40% a +50%             Supuestos documentados + buffer
 
-ESCALABILIDAD: Esta herramienta funciona igual en todas las ciudades (CDMX, 
-Monterrey, Guadalajara, Tijuana) sin necesidad de entrenar a cada persona.
+ESCALABILIDAD REAL:
+ROUTIX funciona igual en TODAS las ciudades para ambas divisiones (Carga y Personal).
+Mismo formato, mismas reglas, mismos resultados.
 
 ┌───────────────────────────────────────────────────────────────────────────┐
-│ 4. LIMITACIONES (SEAMOS HONESTOS)                                         │
+│ 4. LIMITACIONES (SEAMOS HONESTOS)                                        │
 └───────────────────────────────────────────────────────────────────────────┘
 
 QUÉ NO HACE:
-  • No calcula la ruta matemáticamente perfecta (hace una buena propuesta)
-  • No considera tráfico en vivo (usa promedios históricos)
-  • No revisa si hay unidades disponibles en ese momento
+  ✗ No reemplaza coordinadores (los AYUDA a ser más rápidos)
+  ✗ No calcula la ruta matemáticamente perfecta (hace propuesta razonable)
+  ✗ No considera tráfico en vivo (usa promedios históricos)
+  ✗ No valida disponibilidad de unidades en tiempo real
+  ✗ No gestiona permisos SCT internacionales (solo identifica necesidad)
+  ✗ No realiza asignación final de unidades (validación humana requerida)
 
 QUÉ SÍ REQUIERE:
-  • Un coordinador revisa y aprueba la propuesta final
-  • Validación con Google Maps antes de confirmar al cliente
+  ✓ Coordinador revisa y aprueba propuesta final
+  ✓ Validación con Google Maps/Waze antes de confirmar
+  ✓ Verificación de permisos para carga peligrosa/internacional
+
+IMPORTANTE: Es una HERRAMIENTA DE APOYO, no un sistema autónomo.
 
 ┌───────────────────────────────────────────────────────────────────────────┐
-│ 5. PLAN DE IMPLEMENTACIÓN                                                 │
+│ 5. SIGUIENTES PASOS                                                      │
 └───────────────────────────────────────────────────────────────────────────┘
 
-  MES 1-3:  PILOTO
-            • Probar en 2-3 ciudades con más rutas
-            • Medir: tiempo ahorrado y precisión de propuestas
-            • Ajustar según feedback de coordinadores
-  
-  MES 4-6:  EXPANSIÓN
-            • Todas las regiones usan la herramienta
-            • Integrar con sistema de flota (saber qué unidades hay)
-  
-  MES 7+:   EVOLUCIÓN
-            • Agregar optimización matemática avanzada
-            • Conectar con Google Maps para tráfico en tiempo real
+PILOTO (Mes 1-2):
+  • Probar en 2-3 ciudades clave (CDMX, Monterrey, Guadalajara)
+  • Medir: tiempo ahorrado, precisión de propuestas, adopción
+  • Ajustar según feedback de coordinadores
+
+EXPANSIÓN (Mes 3-4):
+  • Todas las regiones usan ROUTIX
+  • Integrar con sistema de flota (verificar unidades disponibles)
+
+EVOLUCIÓN (Mes 5+):
+  • Optimización matemática avanzada (TSP solver)
+  • Conexión con Google Maps API para tráfico en tiempo real
+  • Módulo de permisos SCT internacionales
+  • Integración total con ERP SAP
 
 ═══════════════════════════════════════════════════════════════════════════════
 CONCLUSIÓN
+═══════════════════════════════════════════════════════════════════════════════
 
-Esta solución NO reemplaza la experiencia humana, la AMPLIFICA.
+ROUTIX NO reemplaza la experiencia humana, la AMPLIFICA.
 
-Proporciona un marco estructurado y consistente que permite a coordinadores 
-tomar decisiones MÁS RÁPIDAS, MEJOR FUNDAMENTADAS y MÁS EFICIENTES.
+Proporciona un marco simple, claro y consistente que permite a coordinadores
+tomar decisiones MÁS RÁPIDAS, MEJOR FUNDAMENTADAS y MÁS EFICIENTES en
+toda la operación de Traxión (Carga y Personal).
+
+AUTOCHEQUEO DE CALIDAD:
+✓ ¿Se entiende el problema? → SÍ (en una frase)
+✓ ¿La solución es clara? → SÍ (5 preguntas, 8 secciones)
+✓ ¿Reconocemos limitaciones? → SÍ (honestamente documentadas)
+✓ ¿Alguien externo lo entiende? → SÍ (sin estar en el hackatón)
 
 RESULTADO ESPERADO: Menos tiempo en tareas repetitivas, más tiempo en 
-optimización y atención al cliente, mejor calidad de servicio desde día 1.
+optimización y atención al cliente, mejor calidad desde la primera propuesta.
+
+Claridad > Perfección. Un proyecto simple, bien pensado y bien explicado
+siempre tendrá más valor que uno complejo y confuso.
 
 ───────────────────────────────────────────────────────────────────────────────
-Elaborado para: Hackatón Bécalos Traxión Tech Challenge 2025-2026| Eje 1
-Versión: 1.0 | Enero 2025
+Elaborado para: Hackatón Bécalos Traxión Tech Challenge 2025 | Eje 1
+ROUTIX | Versión: 2.0 (Dual) | Enero 2025
 ═══════════════════════════════════════════════════════════════════════════════

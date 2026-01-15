@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAXIÓN | Ruta de Carga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-section">
+                <a href="index.html" class="logo" style="text-decoration: none;">
+                    <img src="img/Routixx.png" alt="Routix AI" class="logo-img">
+                    <div class="logo-text">TRAXIÓN</div>
+                </a>
+                <div class="header-subtitle">PLANEACIÓN DE CARGA</div>
+            </div>
+            <a href="index.html" class="btn-secondary" style="padding: 10px 20px; font-size: 0.8rem;">
+                ← VOLVER
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">NUEVA RUTA DE CARGA</h1>
+                <p class="section-description">
+                    Ingresa los datos operativos para generar una propuesta de ruta optimizada.
+                </p>
+            </div>
+
+            <form class="route-form">
+
+                <div class="form-group-section">
+                    <div class="form-section-title">
+                        <span class="section-number">1</span>
+                        Tipo y Tamaño de Carga
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Tipo de Carga <span class="label-required">*</span></label>
+                            <select class="form-select">
+                                <option>Seleccionar tipo...</option>
+                                <option>General (Seca)</option>
+                                <option>Perecedera (Refrigerada)</option>
+                                <option>Peligrosa (Materiales HazMat)</option>
+                                <option>Alto Valor (Electrónicos, etc.)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tamaño / Peso <span class="label-required">*</span></label>
+                            <select class="form-select">
+                                <option>Seleccionar tamaño...</option>
+                                <option>Pequeña (hasta 3.5 toneladas)</option>
+                                <option>Mediana (3.5 a 10 toneladas)</option>
+                                <option>Grande (> 10 toneladas)</option>
+                                <option>Full / Doble Remolque</option>
+                            </select>
+                            <div class="form-hint">Peso aproximado de la mercancía</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-section">
+                    <div class="form-section-title">
+                        <span class="section-number">2</span>
+                        Puntos de la Ruta
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Origen(es) <span class="label-required">*</span></label>
+                            <textarea class="form-textarea" placeholder="Ej: Planta VW Puebla, Nave C..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Destino(s) <span class="label-required">*</span></label>
+                            <input type="text" class="form-input"
+                                placeholder="Ej: CEDIS Walmart Tultitlán, Bodega Aurrera... (separados por comas)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-section">
+                    <div class="form-section-title">
+                        <span class="section-number">3</span>
+                        Tiempos y Horarios
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Horario Límite de Entrega</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="horario" class="form-checkbox" checked>
+                                    Flexible (Sin horario fijo)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="radio" name="horario" class="form-checkbox">
+                                    Horario Fijo (Especificar)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Hora Específica (Si aplica)</label>
+                            <input type="time" class="form-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-section">
+                    <div class="form-section-title">
+                        <span class="section-number">4</span>
+                        Unidad Requerida
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Tipo de Unidad Preferida</label>
+                            <select class="form-select">
+                                <option>No estoy seguro (Sugiéreme una)</option>
+                                <option>Camión 3.5 Toneladas</option>
+                                <option>Rabón (6-8 Ton)</option>
+                                <option>Torton (10-14 Ton)</option>
+                                <option>Tráiler 48' / 53'</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-section">
+                    <div class="form-section-title">
+                        <span class="section-number">5</span>
+                        Prioridad Operativa
+                    </div>
+                    <div class="form-row">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="radio" name="prioridad" class="form-checkbox" checked>
+                                Puntualidad (Tiempo)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="prioridad" class="form-checkbox">
+                                Bajo Costo (Económico)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="prioridad" class="form-checkbox">
+                                Seguridad Máxima
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="prioridad" class="form-checkbox">
+                                Cuidado de Carga
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-primary">
+                        GENERAR PROPUESTA DE RUTA
+                    </button>
+                    <button type="button" class="btn-secondary">
+                        LIMPIAR
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="results-section">
+                <div class="result-card">
+                    <h3 class="card-title">
+                        <img src="img/Routixx.png" alt="IA" class="agent-avatar">
+                        Respuesta del Agente ROUTIX
+                    </h3>
+                    <p style="color: var(--gris-claro); font-style: italic;">
+                        Aquí aparecerá la ruta generada, recomendaciones y el enlace a Google Maps una vez procesada la
+                        información.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        TRAXIÓN Tech Challenge 2025 | Prototipo HTML/CSS
+    </footer>
+
+</body>
+
+</html>
