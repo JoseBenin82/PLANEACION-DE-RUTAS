@@ -163,5 +163,5 @@ siempre tendrá más valor que uno complejo y confuso.
 
 ───────────────────────────────────────────────────────────────────────────────
 Elaborado para: Hackatón Bécalos Traxión Tech Challenge 2025 | Eje 1
-ROUTIX | Versión: 2.0 (Dual) | Enero 2025
+ROUTIX | Versión: 2.0 (Dual) | Enero 2026
 ═══════════════════════════════════════════════════════════════════════════════

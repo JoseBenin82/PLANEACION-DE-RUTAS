@@ -91,6 +91,33 @@ En solo **5 preguntas**, ROUTIX genera una **propuesta clara, explicable y accio
 
 ---
 
+## 📂 Estructura del Proyecto
+
+Este repositorio contiene los entregables clave del reto:
+
+1.  **💻 Prototipo Web (`index.html`):**
+    -   Interfaz visual para la interacción con el usuario.
+    -   **Tecnología:** Solo HTML5 y CSS3 (Sin JavaScript).
+    -   **Uso:** Abre el archivo `index.html` en cualquier navegador web.
+
+2.  **🧠 Cerebro del Agente (`PROMPT_AGENTE_IA.txt`):**
+    -   El "código fuente" o *system prompt* que da vida a ROUTIX.
+    -   Contiene toda la lógica, reglas de negocio y formato de respuesta.
+
+3.  **📄 Documento Ejecutivo (`DOCUMENTO_EJECUTIVO.txt`):**
+    -   Resumen de alto nivel para directivos sobre el impacto y valor del proyecto.
+
+---
+
+## 🛠️ Instrucciones de Instalación
+
+No se requiere instalación compleja.
+
+1.  **Para ver la web:** Doble clic en `index.html`.
+2.  **Para probar la IA:** Copia el contenido de `PROMPT_AGENTE_IA.txt` en ChatGPT o usa el enlace directo arriba.
+
+---
+
 ## 🧩 ¿Cómo funciona ROUTIX? (pipeline)
 
 ```text
@@ -107,6 +134,4 @@ Reglas operativas TRAXIÓN (heurísticas)
 Salida estandarizada (8 secciones)
   ↓
 Ruta + Unidad + Riesgo + Confianza + Mapa
-
-
-
+```
